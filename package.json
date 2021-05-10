@@ -1,0 +1,23 @@
+{
+  "name": "ui-deps",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:makesitgo/ui-deps.git",
+  "author": "Nick Makes <nick@makes.life>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn",
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "bin": {
+    "ui-deps": "dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/semver": "^7.3.5",
+    "semver": "^7.3.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
